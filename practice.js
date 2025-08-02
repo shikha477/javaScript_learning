@@ -83,3 +83,17 @@ function init(){
 }
 let c = init();
 c();
+
+
+//arrow function 
+const x ={
+    name: "shikha",
+    role:"frontend developer",
+    exp:3,
+    show :function(){
+        setTimeout(() =>{
+            console.log(this.name + " is a " + this.role + " with " + this.exp + " years of experience.")
+        },2000)
+    }
+}
+x.show()
