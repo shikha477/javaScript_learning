@@ -67,4 +67,19 @@ function greet(){
     console.log("good morning")
 }
 var a = 9; // declaration hoisted to the top but initialization is not 
+
 console.log(a)
+
+
+
+//closure
+function init(){
+    var name ="mozilla";
+    function displayName(){
+        console.log (name);
+    }
+    name ="google"
+    return displayName;
+}
+let c = init();
+c();
