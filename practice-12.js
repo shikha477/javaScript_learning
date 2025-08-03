@@ -47,7 +47,7 @@
 
 //exercise -7
 //password generator
-class password{
+class Password{
     constructor(){
         console.log("Welcome to Password Generator")
         this.pass=""
@@ -75,5 +75,9 @@ class password{
 
     }
 }
-let p = new password()
-console.log(p.generatePassword(7))
+ function generate() {
+            let p = new Password();
+            let result = p.generatePassword(10); // Change number here for different length
+            document.getElementById("output").innerText = "Generated Password: " + result;
+        }
+
